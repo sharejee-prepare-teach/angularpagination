@@ -1,1 +1,9 @@
 https://www.baeldung.com/pagination-with-a-spring-rest-api-and-an-angularjs-table
+=> Angular Pagination
+http://www.springboottutorial.com/spring-boot-and-h2-in-memory-database
+=> H2 Database
+create table test_person
+(
+id INT,
+name varchar(30)
+);

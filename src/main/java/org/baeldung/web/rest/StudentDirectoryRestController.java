@@ -5,18 +5,17 @@ import org.baeldung.web.exception.MyResourceNotFoundException;
 import org.baeldung.web.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
 
-@RestController
+@Controller
 public class StudentDirectoryRestController {
 
     @Autowired
     private StudentService service;
 
     @RequestMapping(value = "/student/get", params = { "page", "size" }, method = RequestMethod.GET, produces = "application/json")
+    @ResponseBody
     public Page<Student> findPaginated(@RequestParam("page") int page, @RequestParam("size") int size) {
 
         Page<Student> resultPage = service.findPaginated(page, size);

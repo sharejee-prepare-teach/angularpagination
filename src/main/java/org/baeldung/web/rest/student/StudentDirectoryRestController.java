@@ -1,4 +1,4 @@
-package org.baeldung.web.rest;
+package org.baeldung.web.rest.student;
 
 import org.baeldung.web.entity.Student;
 import org.baeldung.web.exception.MyResourceNotFoundException;

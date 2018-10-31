@@ -2,7 +2,7 @@ package org.baeldung.web.rest;
 
 import org.baeldung.web.entity.Student;
 import org.baeldung.web.exception.MyResourceNotFoundException;
-import org.baeldung.web.service.StudentService;
+import org.baeldung.web.service.students.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;

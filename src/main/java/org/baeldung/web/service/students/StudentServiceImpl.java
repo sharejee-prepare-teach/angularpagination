@@ -1,4 +1,4 @@
-package org.baeldung.web.service;
+package org.baeldung.web.service.students;
 
 import org.baeldung.web.dao.StudentRepository;
 import org.baeldung.web.entity.Student;

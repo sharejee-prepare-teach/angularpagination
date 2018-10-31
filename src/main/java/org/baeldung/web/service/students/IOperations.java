@@ -1,4 +1,4 @@
-package org.baeldung.web.service;
+package org.baeldung.web.service.students;
 
 import org.springframework.data.domain.Page;
 
